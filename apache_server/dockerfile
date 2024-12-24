@@ -2,8 +2,7 @@
 FROM amazonlinux:latest
 
 # Step 2: Update the system and install Apache
-RUN yum update -y && \
-    yum install -y httpd
+RUN yum update -y && yum install -y httpd
     
 
 # Step 3: Set the working directory

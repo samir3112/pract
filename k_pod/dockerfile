@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+# install curl 
+RUN apt update -y && apt install curl -y
+EXPOSE 80
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+ENV PYTHONUNBUFFERED=1
+CMD ["flask", "run", "--host", "0.0.0.0"]
+
+
+# docker build -t samir3112/c-apache:v1 .
+# docker push samir3112/c-apache:v1

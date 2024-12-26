@@ -1,5 +1,5 @@
-# Step 1: Use a base image with yum support
-FROM amazonlinux:latest
+# Step 1: Use a Red Hat UBI 8 base image
+FROM registry.access.redhat.com/ubi8/ubi:latest
 
 # Step 2: Update the system and install Apache
 RUN yum update -y && yum install -y httpd

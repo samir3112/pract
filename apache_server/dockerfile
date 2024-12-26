@@ -22,4 +22,4 @@ ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 # docker ps -a
 # docker inspect <container id>
 # IP address
-# curl http:// IP address
+# curl http:// IP address:80

@@ -19,3 +19,7 @@ ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 # docker build -t samir3112/c-apache:v1 .
 # docker run -d -p 80:80 samir3112/c-apache:v1
+# docker ps -a
+# docker inspect <container id>
+# IP address
+# curl http:// IP address

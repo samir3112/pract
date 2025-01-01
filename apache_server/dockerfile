@@ -28,7 +28,7 @@ ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 # 2nd Program
 # docker build -t samir3112/c-apache:v1 .
-# docker run -d -p 8080:80 -d -v $(pwd)/changes/file_host:/var/www/html/index.html --rm samir3112/c-apache:v1 
+# docker run -d -p 8080:80 -d -v $(pwd)/changes/file_host:/var/www/html/index.html samir3112/c-apache:v1 
 # docker volume ls
 # GET  data
 # curl  'http://localhost:80'
